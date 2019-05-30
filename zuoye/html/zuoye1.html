@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		html,
+		body {
+			height: 100%;
+
+		}
+
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		.bigcontainer {
+			margin: 0 auto;
+			width: 500px;
+
+		}
+
+		.container {
+			width: 500px;
+			margin: 0 auto;
+			background: limegreen;
+			padding: 20px;
+			border-radius: 5px;
+			
+		}
+
+		.main {}
+
+		.container div {
+			background: greenyellow;
+			padding: 8px;
+			margin: 5px 0;
+			border-radius: 5px;
+
+		}
+
+		.container div span {
+			width: 140px;
+			display: inline-block;
+			font-size: 16px;
+		}
+
+		input {
+
+			width: 300px;
+			border-radius: 5px;
+			line-height: 30px;
+		}
+
+		.radiocss input {
+			width: 30px;
+		}
+	</style>
+	<body>
+		<div class="bigcontainer">
+			<h4>Payment form</h4>
+			<div class="container">
+				<form>
+					<h5>Step1:Your details</h5>
+					<div><span>Name</span><input type="text" name="name" placeholder="First and last name" /></div>
+					<div><span>Email</span><input type="email" name="email" placeholder="example@domain.com" /></div>
+					<div><span>Phone</span><input type="tel" name="phone" placeholder="Eg.+447500000000000" /></div>
+
+					<h5>Step2:Delivery address</h5>
+					<div><span>Address</span><textarea rows="5" cols="43"></textarea></div>
+					<div><span>Post code</span><input type="text" name="code" placeholder="" /></div>
+					<div><span>Country</span><input type="text" name="country" placeholder="" /></div>
+					<h5>Step3:Card details</h5>
+					<div class="radiocss">
+						<p>Card type</p>
+						<input type="radio" name="card" value="visa" />VISA
+						<input type="radio" name="card" value="amex" />Amex
+						<input type="radio" name="card" value="mastercard" />Mastercard
+
+					</div>
+					<div><span>Card number</span><input type="text" name="number" placeholder="" /></div>
+					<div><span>Securify code</span><input type="text" name="security" placeholder="" /></div>
+					<div><span>Name on card</span><input type="text" name="namecard" placeholder="Exact name as on the card" /></div>
+					<div style="text-align: center;"><button style="background: #000;border-radius: 5px;width: 100px;height: 30px; color: #fff;">BUY IT!</button></div>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>

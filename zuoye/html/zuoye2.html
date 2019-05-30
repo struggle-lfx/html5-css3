@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+
+		html,
+		body {
+			height: 100%;
+		}
+
+		header {
+			background: orange;
+			text-align: center;
+		}
+
+		footer {
+			background: #FFA500;
+			text-align: center;
+		}
+
+		.container {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+			
+		}
+
+		.main {
+			flex: 1;
+			background: dimgrey;
+			padding: 10px;
+		}
+
+		nav {
+			float: left;
+			width: 250px;
+		}
+		nav p{
+			text-align: center;
+			color: white;
+		}
+		nav li{
+			border-bottom: 3px solid white;
+			height: 40px;
+			color: #FFA500;
+		}
+
+		.article1 {
+			display: flex;
+			flex-direction: column;
+			width: 500px;
+			background: azure;
+			padding: 10px;
+			margin-top: 10px;
+		}
+
+		.main-contain {
+			float: left;
+			overflow: hidden;
+			margin:0 20px;
+		}
+aside{
+	color: white;
+	padding: 20px;
+	
+}
+aside h3{
+	text-align: center;
+}
+	</style>
+	<body>
+		<div class="container">
+			<header>
+				<h1>Header</h1>
+			</header>
+			<main class="main">
+				<nav>
+					<p>nav</p>
+					<ul>
+						<li>link1</li>
+						<li>link2</li>
+						<li>link3</li>
+					</ul>
+				</nav>
+				<div class="main-contain">
+
+					<article class="article1">
+						<header>Artical Header</header>
+						<main>
+							<p>section元素用于对网站或应用程序中页面上的内容进行分块。
+								一个section元素通常由内容及其标题组成。</p>
+							<p>但section元素并非一个普通的容器元素；当一个内容需要被直接定义样式或通过脚本定义行为时，推荐使用div而非section元素。section元素中的内容可以单独存储到数据库中或输出到word文档中。</p>
+						</main>
+						<footer>Artical Footer</footer>
+					</article>
+					<article class="article1">
+						<header>Artical Header</header>
+						<main>
+							<p>section元素用于对网站或应用程序中页面上的内容进行分块一个section元素通常由内容及其标题组成。</p>
+						</main>
+						<footer>Artical Footer</footer>
+					</article>
+				</div>
+				<aside>
+					<h3>Aside</h3>
+					<p>ection元素并非一个普通的容器元素；当一个内容需要被直接定义样式或通过脚本定义行为时，推荐使用div而非section元素。</p></aside>
+			</main>
+			<footer>
+				<h1>Footer</h1>
+			</footer>
+
+		</div>
+	</body>
+</html>
